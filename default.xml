@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="4" revision="dunfell" />
+
+  <remote fetch="https://git.openembedded.org" name="openembedded-org" />
+  <remote fetch="https://github.com" name="github-com" />
+
+  <project remote="openembedded-org" name="bitbake" path="layers/bitbake" revision="1.46" />
+  <project remote="openembedded-org" name="openembedded-core" path="layers/openembedded-core" />
+  <project remote="openembedded-org" name="meta-openembedded" path="layers/meta-openembedded" />
+
+  <project remote="github-com" name="grembeter/oe-scripts" path="scripts" revision="main">
+    <linkfile src="source-env-oe" dest="source-env-oe" />
+  </project>
+</manifest>
